@@ -1,13 +1,13 @@
 <?php
 
-// @VbazdidGirads
+
 error_reporting(0);
 if (!file_exists('madeline.php')) {
     copy('https://phar.madelineproto.xyz/madeline.php', 'madeline.php');
 }
 define('MADELINE_BRANCH', 'deprecated');
 include 'madeline.php';
-function closeConnection($message = '✅ Clicker Is Running ... @VbazdidGirads')
+function closeConnection($message = '✅ Clicker Is Running ... ')
 {
     if (php_sapi_name() === 'cli' || isset($GLOBALS['exited'])) {
         return;
@@ -49,7 +49,7 @@ while (!$locked) {
     }
 }
  
-$settings = ['logger'=>['logger'=>0],'app_info'=> ['api_id'=>575238,'api_hash'=> 'a90de900f4d398925565835ce37fa91e']];
+$settings = ['logger'=>['logger'=>0],'app_info'=> ['api_id'=>281939,'api_hash'=> '22244e99ad8b96b22dc8ee310af06b73']];
 $MadelineProto = new \danog\MadelineProto\API('soltan.madeline',$settings);
 $MadelineProto->start();
 $offset = 0;
@@ -74,5 +74,4 @@ while (true) {
         }
     }
 }
-// @VbazdidGirads
 ?>
