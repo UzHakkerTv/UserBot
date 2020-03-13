@@ -1,6 +1,5 @@
 <?php
 
-// @VbazdidGirads
 $listplugins = [
   "plugin"
 ];
@@ -9,5 +8,4 @@ for($n=0; $n<=$cplug; $n++) {
   $pluginlist = "$listplugins[$n].php";
   include($pluginlist);
 }
-// @VbazdidGirads
 ?>
